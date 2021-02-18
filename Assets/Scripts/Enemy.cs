@@ -5,8 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Enemy : MonoBehaviour
 {
-    [Min(0)] [SerializeField] private float _minPauseTimebetweenJump;
-    [Min(1)] [SerializeField] private float _maxPauseTimebetweenJump;
+    [Min(0)] [SerializeField] private float _minPauseTimeBetweenJump;
+    [Min(1)] [SerializeField] private float _maxPauseTimeBetweenJump;
     [SerializeField] private float _forceJump;
     [SerializeField] private int _maxJumpCount;
 
@@ -16,8 +16,8 @@ public class Enemy : MonoBehaviour
 
     private void OnValidate()
     {
-        if (_minPauseTimebetweenJump >= _maxPauseTimebetweenJump)
-            _maxPauseTimebetweenJump = _minPauseTimebetweenJump+1;
+        if (_minPauseTimeBetweenJump >= _maxPauseTimeBetweenJump)
+            _maxPauseTimeBetweenJump = _minPauseTimeBetweenJump+1;
     }
 
     private void Awake()
@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(_minPauseTimebetweenJump, _maxPauseTimebetweenJump));
+            yield return new WaitForSeconds(Random.Range(_minPauseTimeBetweenJump, _maxPauseTimeBetweenJump));
             if (_countJump < _maxJumpCount)
                 Jump();
             else

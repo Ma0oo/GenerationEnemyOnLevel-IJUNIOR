@@ -161,7 +161,7 @@ MonoBehaviour:
   - {fileID: 147919100}
   - {fileID: 840852801}
   - {fileID: 138943866}
-  _enemyTemplate: {fileID: 4262702589432328153, guid: 21789b4d7ffad4348b6f516bb40b9f14, type: 3}
+  _template: {fileID: 4262702589432328153, guid: 21789b4d7ffad4348b6f516bb40b9f14, type: 3}
   _timeBetweenSpawn: 2
 --- !u!4 &78054426
 Transform:
@@ -719,13 +719,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.92387867, z: -0, w: 0.38268548}
   m_LocalPosition: {x: 0, y: 4.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -135, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
