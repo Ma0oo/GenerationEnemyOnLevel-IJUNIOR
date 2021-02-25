@@ -739,6 +739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sensevity: 2
+  _maxAngelToDown: 45
+  _maxAngelToUp: 10
 --- !u!1 &1588090920
 GameObject:
   m_ObjectHideFlags: 0

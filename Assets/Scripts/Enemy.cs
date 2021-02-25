@@ -16,8 +16,9 @@ public class Enemy : MonoBehaviour
 
     private void OnValidate()
     {
-        if (_minPauseTimeBetweenJump >= _maxPauseTimeBetweenJump)
-            _maxPauseTimeBetweenJump = _minPauseTimeBetweenJump+1;
+        int additionalNumberForCorrectMaxValue = 1;
+        if (_maxPauseTimeBetweenJump <= _minPauseTimeBetweenJump)
+            _maxPauseTimeBetweenJump = _minPauseTimeBetweenJump + additionalNumberForCorrectMaxValue;
     }
 
     private void Awake()

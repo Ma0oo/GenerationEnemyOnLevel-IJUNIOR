@@ -12,8 +12,9 @@ public class RotateCamera : MonoBehaviour
 
     private void OnValidate()
     {
+        int additionalNumberForCorrectAngelUp = 1;
         if (_maxAngelToUp > _maxAngelToDown)
-            _maxAngelToUp = _maxAngelToDown - 1;
+            _maxAngelToUp = _maxAngelToDown - additionalNumberForCorrectAngelUp;
     }
 
     private void Start()

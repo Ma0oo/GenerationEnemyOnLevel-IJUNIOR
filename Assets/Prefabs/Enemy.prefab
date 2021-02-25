@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b713825a9a41e64facf58b2a46156ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minPauseTimeBetweenJump: 2
+  _minPauseTimeBetweenJump: 1
   _maxPauseTimeBetweenJump: 4
   _forceJump: 30
   _maxJumpCount: 3
